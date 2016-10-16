@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 18, 2012 10:02:36 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="hibernate" lazy="false" name="org.sample.Student" table="student">
+        <id name="regno" type="java.lang.Integer">
+            <column name="regno"/>
+            <generator class="identity"/>
+        </id>
+        <property name="name" type="string">
+            <column length="45" name="name"/>
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="age"/>
+        </property>
+    </class>
+</hibernate-mapping>
